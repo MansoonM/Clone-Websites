@@ -1,0 +1,477 @@
+    
+          /* Mansoon Mohanty */
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dflex{
+    display: flex;
+}
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      /*   1>  For navigation bar                       */
+      .navbar {
+        overflow: hidden;
+        background-color: white;
+          width: 100%;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          justify-content: space-evenly;
+          align-items: center;
+          padding-right: 80px;
+          position: sticky;
+          top: 0px;
+          z-index: 100;
+          box-shadow: 0 1px 1px 0 rgb(148, 147, 147);
+      }
+
+
+      .navbar a {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+          cursor: pointer;
+          font-size: 15px;
+      }
+
+      /*     for hover it changes its color of text             */
+      .navbar a:hover {
+          color: rgb(132, 61, 160);
+      }
+
+      .navbar img {
+          height: 110px;
+          padding-right: 20px;
+          cursor: pointer;
+      }
+
+      /*  2> For Three Image Sliders/ Displaying Images                */
+
+      .imagepart1 img {
+          width: 100%;
+        }
+
+      .textlefttop {
+          position: absolute;
+          padding-top: 25px;
+          padding-left: 120px;
+          top: 100px;
+          color: white;
+          font-weight: 500;
+          font-size: 20px;
+      }
+
+      .textleftbottom {
+          position: absolute;
+          padding-top: 35px;
+          padding-left: 120px;
+          top: 280px;
+          font-size: 1.25rem;
+          font-weight: 450;
+          color: #3b2a6b;
+      }
+
+      .imagepart1 .textleftbottom .btn1 {
+          position: absolute;
+          margin-top: 25px;
+          width: 160px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          font-weight: 500;
+          height: 38px;
+          background-color: #6739b7;
+          color: white;
+          border-radius: 33px;
+          border: none;
+      }
+
+      .imagepart1 .textleftbottom .btn1:hover {
+          background-color: #7e5cb9;
+          cursor: pointer;
+      }
+
+      /*      3> SlideIcons and its hover nature                */
+      .slideicon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 6px;
+      }
+
+
+      .slideicon .firsticon {
+          margin: 6px;
+          width: 17px;
+          height: 17px;
+          background-color: #bbb9b9;
+          border-radius: 50%;
+          background-color: #7e5cb9;
+
+      }
+
+      .slideicon .firsticon:hover {
+          background-color: #7e5cb9;
+      }
+
+      .slideicon .secondicon {
+          margin: 6px;
+          width: 17px;
+          height: 17px;
+          background-color: #bbb9b9;
+          border-radius: 50%;
+
+      }
+
+      .slideicon .secondicon:hover {
+          background-color: #7e5cb9;
+      }
+
+      .slideicon .thirdicon {
+          margin: 6px;
+          width: 17px;
+          height: 17px;
+          background-color: #bbb9b9;
+          border-radius: 50%;
+
+      }
+
+      .slideicon .thirdicon:hover {
+          background-color: #7e5cb9;
+      }
+
+      /*     4> For two cards               */
+      .cards {
+          margin-top: 80px;
+          width: 100%;
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          /* background-color: antiquewhite; */
+      }
+
+      .leftcard {
+        margin-right: 10px;
+          font-size: 32px;
+          font-weight: 600;
+          width: 40%;
+          background-color: #fdfbfb;
+          display: inline;
+          justify-content: left;
+          border: 0.1px solid black;
+          border-radius: 15px;
+          padding-top: 25px;
+          padding-left: 30px;
+          color: #371F7B;
+      }
+
+
+      .leftcard .small1 {
+          margin-top: 30px;
+          color: rgb(53, 52, 52);
+          font-size: 18px;
+          font-weight: 500;
+      }
+
+      .leftcard img {
+          width: 60px;
+          height: 40px;
+          margin-top: 15px;
+          padding-top: 15px;
+
+      }
+
+      .rightcard img {
+          width: 60px;
+          height: 40px;
+          margin-top: 15px;
+          padding-top: 15px;
+      }
+
+      .rightcard {
+          font-size: 32px;
+          font-weight: 600;
+          width: 40%;
+          margin-left: 10px;
+          background-color: #fdfbfb;
+          display: inline;
+          justify-content: left;
+          border: 0.1px solid black;
+          border-radius: 15px;
+          padding-top: 25px;
+          padding-left: 25px;
+          color: #371F7B;
+      }
+
+
+      .rightcard .small2 {
+          margin-top: 30px;
+          color: rgb(53, 52, 52);
+          font-size: 18px;
+          font-weight: 500;
+      }
+
+/* Right side Image in cards */
+.cards .leftcard .sheild{
+   
+    position: absolute;
+    top : 600px;
+    left:450px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.cards .leftcard .sheild  img{
+    width: 160px;
+    height: 180px;
+}
+
+.cards .rightcard .mutualfund{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    top : 600px;
+    right:180px;
+}
+.cards .rightcard .mutualfund img{
+    width: 160px;
+    height: 180px;
+}
+
+
+      /*            Hover on Right or Left Cards            */
+
+      .leftcard:hover {
+          box-shadow: 8px 15px 15px 5px rgb(214, 210, 210);
+          transition: 0.3s ease-in-out;
+          background-color: #f1ecfa;
+          border: none;
+          height: 312px;
+          width: 40.2%;
+      }
+
+      .rightcard:hover {
+          box-shadow: 8px 15px 15px 5px rgb(214, 210, 210);
+          transition: 0.3s ease-in-out;
+          background-color: #f1ecfa;
+          border: none;
+          height: 312px;
+          width: 40.2%;
+      }
+
+      .second-section{
+        height: 500px;
+        justify-content: space-evenly;
+        margin-top: 50px;
+      }
+
+.left-side{
+    margin-top: 150px;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 170px;
+}
+
+.right-side{
+    width: 50vw;
+    margin-top: 20px;
+}
+
+.simple{
+    font-size: 43px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.para1{
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    width: 35vw;
+}
+.para2{
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    width: 35vw;
+    margin-top: 25px;
+}
+.para3{
+    margin-top: 25px;
+}
+
+.left-side span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.third-section{
+    margin-top:200px;
+}
+.karte-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:250px;
+    width:650px;
+}
+.phonepe-img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height:150px;
+    width:250px;
+}
+.container{
+    width:90%;
+    display:flex;
+    margin:0px;
+    flex-direction: row;
+    justify-content: center;
+}
+.box{
+    width:200px;
+    display:block;
+    box-shadow: #bbb9b9;
+    transition: 1s;
+}
+.box img{
+    display:block;
+    width: 300px;
+    border-radius: 1px;
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index:2;
+}
+.watchme{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: PhonePeSans,sans-serif,Helvetica,Arial;
+    background-color: #fff;
+    border: 1px solid #533093;
+    border-radius: 18px;
+    color: #533093;
+    height: 36px;
+    line-height: 32px;
+    margin-left: 555px;
+    font-weight: 540;
+    margin-bottom: 25px;
+    width: 248px;
+    border-radius: 17px;
+    min-width: max-content;
+    padding: 0 16px;
+}
+/*  Hover on button */
+.watchme:hover{
+    background-color: #533093;
+    color: #fff;
+
+}
+
+.paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    opacity: .8;
+    text-align: center;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.word{
+    color: #6b35a9;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    opacity: .8;
+    text-align: center;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: top 5px;;
+
+}
+
+
+.neon {
+    margin-top: -150px;
+    font-size: var(--font-size);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 
+      0 0 .20em #FFF7,
+      0 0 .30em var(--clr-neon);
+    box-shadow: 
+      inset 0 0 .5em var(--clr-neon),
+            0 0 .5em var(--clr-neon);
+  }
+  
+  .neon::before {
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-neon);
+    transform: 
+      perspective(0.2em)
+      rotateX(10deg) 
+      scale(1.3, 0.40);
+    filter: blur(0.5em);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-neon);
+    box-shadow: 0 0 2em var(--clr-neon);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon:hover::after {
+    opacity: 1;
+  }
+  .neon:hover, .neon:focus {
+    color: white;
+  }
+  .neon:hover::before {
+    opacity: 0.8;
+  }
+
+
+/*      The  End   */
+
+
+
